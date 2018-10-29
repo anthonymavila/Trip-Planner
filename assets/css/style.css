@@ -1,0 +1,536 @@
+@font-face {
+    font-family: Anton;
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+@font-face {
+    font-family: Teko;
+    src: url(../fonts/Teko/Teko-Regular.ttf);
+}
+@font-face {
+    font-family: PermanentMarker;
+    src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+/**
+font-family: 'Anton', sans-serif;
+font-family: 'PermanentMarker', cursive;
+font-family: 'SourceSansPro', sans-serif;
+**/
+
+html {
+	background: #fff;
+	height: 100vh;
+}
+body {
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(234,243,247,1) 30%, rgba(234,243,247,1) 60%, rgba(255,255,255,0.5) 100%);
+}
+html, body {
+	width: 100%;
+	
+	
+	color: rgb(61, 66, 68);
+	font-family: 'Teko', sans-serif;
+}
+
+.navbar-brand {
+	font-family: 'Anton', sans-serif !important;
+}
+.navbar {
+	padding-bottom: 0;
+	font-size: 1.2em;
+	background: rgb(228,228,236);
+	background: linear-gradient(180deg, rgba(228,228,236,1) 0%, rgba(214,231,240,1) 100%);
+}
+
+.navbar .nav-item {
+	margin-right: 15px;
+}
+
+.navbar a:link,
+.navbar a:visited {
+	color: #000;//rgb(122, 197, 226);
+	position: relative;
+	z-index: 2;
+}
+
+.navbar .active a:link::before,
+.navbar .active a:visited::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom: 5px solid rgb(83, 184, 224);
+
+}
+.navbar .nav-item .active a:hover::before,
+.navbar .nav-item a:hover::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom: 5px solid rgb(132, 216, 249) !important;
+}
+
+.first-div {
+	background: url('../gfx/pexels/adventure-climb-climber-954287.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 95vh;
+	border-bottom: 1px solid black;
+	position: relative;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+.fd-container {
+	 margin: auto auto;
+	 z-index: 2;
+	 opacity: 0.8;
+	 color: snow;
+	 font-size: 10vh;
+	 width: 80vw;
+	 clear: both;
+}
+
+.first-div::before {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 background: black;
+	 opacity: 0.75;
+	 z-index: 2;
+}
+
+.card-header, .card-header-tabs {
+	background: rgb(228,228,236);
+	background: linear-gradient(180deg, rgba(228,228,236,1) 0%, rgba(214,231,240,1) 100%);
+}
+.second-div {
+	background: rgb(215,219,226);
+	background: linear-gradient(90deg, rgba(215,219,226,1) 0%, rgba(255,255,255,1) 50%, rgba(215,219,226,1) 100%);
+	padding: 15px;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+	position: relative;
+	font-size: 1.5em;
+	display: flex;
+	align-content: center;
+  clear: both;
+}
+
+.second-div .btn {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 1.1em;
+}
+
+#vacation {
+	opacity: 0;
+	-webkit-transition: all 1.5s linear;
+    -moz-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
+    transition: all 1.5s linear;
+}
+
+#gpsimg {
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.page-breaker {
+	height: 10vh;
+}
+
+.portfolio-section {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
+
+.psi {
+	font-size: 1.5em;
+	min-height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 1px solid snow;
+    position: relative;
+}
+.portfolio-section-img1 {
+    background: url('../gfx/pexels/sm/america-canyon-cliff-417119.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img2 {
+background: url('../gfx/pexels/sm/adventure-climb-climber-954287.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img3 {
+background: url('../gfx/pexels/sm/architecture-buildings-city-53212.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+}
+
+.portfolio-section-img5 {
+background: url('../gfx/pexels/sm/beach-exotic-holiday-248797.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img6 {
+background: url('../gfx/pexels/sm/america-ancient-architecture-356844.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img7 {
+background: url('../gfx/pexels/sm/america-architecture-austin-273204.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img8 {
+background: url('../gfx/pexels/sm/architecture-attraction-building-415999.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img9 {
+background: url('../gfx/pexels/sm/architecture-buildings-business-374870.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img10 {
+background: url('../gfx/pexels/sm/beach-buildings-city-105950.jpg');
+background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img11 {
+    background: url('../gfx/pexels/sm/beach-clouds-dream-60217.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-img12 {
+    background: url('../gfx/pexels/sm/california-hill-hollywood-164183.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.portfolio-section-cell {
+    padding: 5px;
+    //-webkit-filter: grayscale(100%);
+    opacity: 1.0;
+}
+
+.portfolio-section-cell:hover {
+    padding: 5px;
+    cursor: pointer;
+    //-webkit-filter: grayscale(0%);
+    opacity: 1.0;
+}
+
+.port-cont {
+  position: absolute;
+  min-height: 0;
+  max-height: 0;
+  overflow: hidden;
+  bottom: 0;
+  background: transparent;
+  width: 100%;
+  opacity: 1.0;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  z-index: 1;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.portfolio-section-cell:hover .port-cont {
+  position: absolute;
+  min-height: 20%;
+  max-height: 20%;
+  overflow: hidden;
+  bottom: 0;
+  background: transparent;
+  width: 100%;
+  opacity: 1.0;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  z-index: 1;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.portfolio-section-cell .port-cont::before,
+.portfolio-section-cell:hover .port-cont::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: black;
+  width: 100%;
+  opacity: 0.6;
+  display: block;
+  font-weight: bold;
+  z-index: -1;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+#blurb p {
+
+}
+
+.rimg {
+  opacity: 0.0;
+  width: 12vw;
+  height: 12vw;
+  border: 1px solid rgb(56, 131, 160);
+  float: right;
+  margin-left:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+  transform: rotate(90deg);
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.newsletter {
+	margin: auto;
+	background: #fff;
+	padding: 15px;
+	border-top: 0px solid silver;
+	border-bottom: 0px solid silver;
+	position: relative;
+	font-size: 1.5em;
+	display: flex;
+	align-content: center;
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+		footer {
+			font-size: 1.5em;
+			padding: 50px;
+			background: rgb(213,217,226);
+			background: linear-gradient(180deg, rgba(145,174,226,1) 0%, rgba(255,255,255,1) 100%);
+		}
+        .foot-links {
+          list-style-type: none;
+          padding: 5px 0px 0px 15px;
+        }
+        .foot-links > li,
+        .foot-links > li > a {
+          padding: 0px;
+          margin: 0px;
+          font-size: 14px;
+          font-weight: 0;
+          color: rgb(66, 71, 73);
+          font-family: arial;
+        }
+
+        .social-cell > a > img {
+          width: 2.5em;
+          opacity: .8;
+        }
+        .social-cell > a:hover > img {
+          width: 2.5em;
+          opacity: 1;
+        }
+        .foot-header {
+          font-weight: bold;
+          display: block;
+          text-decoration: underline;
+        }
+        .newsletter-desc {
+          font-size: 0.7rem;
+          font-color: #eee;
+        }
+
+        .form-signin > input {
+        	margin-bottom: 5px;
+        }
+
+        .login-splash-div {
+			background: url('../gfx/pexels/adventure-climb-climber-954287.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			text-align: center;
+			height: 100%;
+        }
+
+		.login-splash-div::before {
+			 content: "";
+			 position: absolute;
+			 top: 0;
+			 bottom: 0;
+			 left: 0;
+			 right: 0;
+			 background: black;
+			 opacity: 0.4;
+			 z-index: 2;
+		}
+
+        .ls-container {
+		     margin: auto;
+			 z-index: 2;
+			 opacity: 1;
+			 color: snow;
+			 font-size: 10vh;
+			 clear: both;
+        }
+        .invoice {
+        	font-size: 1.2em;
+        	background: rgb(252, 254, 255);
+        	border-radius: 12px;
+        	padding: 15px;
+        }
+        .invoice .btn {
+        	margin: 10px;
+        	float: right;
+        }
+        .invoice-item td,
+        .invoice-item th {
+			white-space: nowrap;
+        }
+        .invoice-item th {
+        	border-top: 0px;
+        }
+        .invoice tr td:first-child i {
+        	background: transparent;
+        	cursor: pointer;
+        	padding: 5px;
+        }
+        .invoice tr td:first-child i:hover {
+        	background: rgb(218, 234, 242);
+        	cursor: pointer;
+        	padding: 5px;
+        	border-radius: 5px;
+        }
+        .invoice-subtotal,
+        .invoice-tax,
+        .invoice-total {
+        	color: rgb(196, 75, 5);
+        	text-align: right;
+        }
+        .cart-side {
+        	font-size: .9em;
+        	background: rgb(252, 254, 255);
+        	border-radius: 5px;
+        	padding: 12px;
+        	height: 100%;
+        }
+
+
+
+        .location-splash-div {
+    			background-size: cover;
+    			background-repeat: no-repeat;
+    			background-position: center;
+    			position: relative;
+    			display: flex;
+    			align-content: center;
+    			justify-content: center;
+    			text-align: center;
+    			height: 100%;
+    			height: 26vh;
+    			margin-bottom: 25px;
+        }
+
+		.location-splash-div::before {
+			 content: "";
+			 position: absolute;
+			 top: 0;
+			 bottom: 0;
+			 left: 0;
+			 right: 0;
+			 background: black;
+			 opacity: 0.4;
+			 z-index: 2;
+		}
+
+        .ls-container {
+		     margin: auto;
+			 z-index: 2;
+			 opacity: 1;
+			 color: snow;
+			 font-size: 10vh;
+			 clear: both;
+        }
+
+        .loc-likes {
+        	font-size: 1.4em;
+        	color: green;
+        	float: left;
+        }
+        .loc-dislikes {
+        	font-size: 1.4em;
+        	color: red;
+        	float: right;
+        }
+        .loc-rating {
+        	font-size: 1.4em;
+        	color: gold;
+        }
+        .loc-label {
+        	font-size: 1.4em;
+        	color: #000;
+        }
+
+        @media (max-width: 800px) {
+          .xs-hidden {
+            display: none;
+          }
+        }
+
+        .btn {
+          font-size: 1.1em;
+          margin: 5px;
+        }
+
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
